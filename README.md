@@ -1,8 +1,18 @@
 # Fact+ — Sistema de Facturación e Inventario
 
-Proyecto final de la asignatura **Desarrollo de Proyectos con Software Libre** — Universidad Abierta para Adultos (UAPA).
+Proyecto final del Grupo 10 para la asignatura **Desarrollo de Proyectos con Software Libre** — Universidad Abierta para Adultos (UAPA).
 
-**Estudiante:** Kelvin Arias
+**Estudiantes:** 
+
+1 Daury Alberto Abreu García          100083836
+2 Kelvin Rafael Arias Almonte         100070280
+3 Cristian Batista Segura             100088786
+4 Lennys Junior Caraballo Taveras     100066222
+5 Keysy Denis Mateo Martínez          100083818
+6 Edwin José Mendoza Rodríguez        100046835
+7 John Neifer Smith Morales Reinoso   100082893
+8 Gilberto Andrés Portillo Fernández  100079954 
+
 
 Fact+ es una aplicación web para pequeños negocios dominicanos (colmados, ferreterías, tiendas) que permite llevar el control del inventario y emitir facturas con **Número de Comprobante Fiscal (NCF)** y cálculo de **ITBIS (18%)**.
 
