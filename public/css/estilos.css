@@ -1,0 +1,134 @@
+/* Estilos generales de Fact+ */
+
+:root {
+    --azul: #1e3a5f;
+    --azul-claro: #2b5282;
+    --naranja: #f08c2e;
+}
+
+body {
+    background-color: #f3f5f9;
+    font-size: 0.95rem;
+}
+
+/* ---------- Menu lateral ---------- */
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background-color: var(--azul);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar .marca {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sidebar .marca span {
+    color: var(--naranja);
+}
+
+.sidebar .nav-link {
+    color: #cbd5e1;
+    padding: 0.45rem 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
+
+.sidebar .nav-link i {
+    margin-right: 6px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--azul-claro);
+    color: #fff;
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--naranja);
+    color: #fff;
+}
+
+.sidebar .titulo-menu {
+    color: #8aa0bd;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 14px 0 4px 10px;
+}
+
+/* Sin esto las tablas anchas empujan el contenido fuera de la pantalla */
+.contenido {
+    min-width: 0;
+}
+
+.barra-superior {
+    background-color: #fff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* En celulares el menu se esconde */
+@media (max-width: 991px) {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        z-index: 1000;
+        transition: left 0.2s;
+    }
+
+    .sidebar.abierto {
+        left: 0;
+    }
+}
+
+/* ---------- Tarjetas del dashboard ---------- */
+.tarjeta-resumen {
+    border: none;
+    border-left: 4px solid var(--naranja);
+    border-radius: 8px;
+}
+
+.tarjeta-resumen .icono {
+    font-size: 2rem;
+    opacity: 0.3;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.table th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #64748b;
+}
+
+/* ---------- Login ---------- */
+.pagina-login {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--azul) 0%, var(--azul-claro) 100%);
+}
+
+.pagina-login .card {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* ---------- Factura ---------- */
+.tabla-factura input {
+    min-width: 70px;
+}
+
+.totales-factura td {
+    padding: 4px 8px;
+}
